@@ -1,2 +1,2 @@
 #DRAFTERIZE
-##A web app for offline fantasy football drafts
+###A web app for offline fantasy football drafts
