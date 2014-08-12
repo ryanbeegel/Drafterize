@@ -1,9 +1,25 @@
 @import "bootstrap";
 
-body {
-  background-color: ADA3AA;
+.user-info {
+  margin-top: 9px;
 }
 
 .nav {
   margin-top: 5px;
+}
+
+.col-md-6 {
+  text-align: center;
+}
+
+h2.one {
+  margin-bottom: -15px;
+}
+
+.jumbotron {
+  background-color: #5D9144;
+}
+
+body {
+  background-color: #B4B5B3;
 }

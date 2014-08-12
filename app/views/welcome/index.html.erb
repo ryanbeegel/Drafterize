@@ -1,5 +1,23 @@
 <br/>
 <div class="jumbotron">
-  <h1>Drafterize</h1>
-  <p>An online tool for your offline fantasy football drafts!</p>
+  <div class="row">
+    <div class="col-md-6">
+      <h1>DRAFTERIZE</h1>
+      <p>The online tool for your offline draft!</p>
+      <p>
+        <%= link_to "Sign In", new_user_session_path, class: 'btn btn-primary' %> or 
+        <%= link_to "Sign Up", new_user_registration_path, class: 'btn btn-primary' %> today!
+      </p>
+      <h2 class="one">No more white boards!</h2>
+      <h3>No more stopwatches!</h3>
+      <h4>Fully automated!</h4>
+      <h5>Unlimited drafts!</h5>
+      <h6>Unlimited fun!</h6>
+    </div>
+    <div class="col-md-6">
+      <p class="img">
+        <%= image_tag 'ff1.jpeg' %>
+      </p>
+    </div>
+  </div>
 </div>
