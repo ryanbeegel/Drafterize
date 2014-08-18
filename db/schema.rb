@@ -14,6 +14,9 @@
 ActiveRecord::Schema.define(version: 20140813184928) do
 
   create_table "drafts", force: true do |t|
+    t.string   "name"
+    t.integer  "rounds"
+    t.float    "minutes_per_round"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

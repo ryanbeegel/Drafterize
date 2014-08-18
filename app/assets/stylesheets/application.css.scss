@@ -8,16 +8,14 @@
   margin-top: 5px;
 }
 
-.col-md-6 {
-  text-align: center;
-}
-
 h2.one {
   margin-bottom: -15px;
 }
 
 .jumbotron {
-  background-color: #5D9144;
+  background-color: #456934;
+  text-align: center;
+  color: #ECF2E9;
 }
 
 body {
@@ -28,7 +26,32 @@ body {
   text-align: center;
 }
 
-.draftform {
-  text-align: center;
+.newform {
   margin-top: 100px;
+  color: #456934;
+}
+
+.roundss {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.minutess {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.nd {
+  text-align: center;
+  margin-bottom: 70px;
+}
+
+.teamnames {
+  margin-top: 15px;
+  margin-bottom: 5px;
+}
+
+.buttonn {
+  margin-top: 15px;
+  text-align: right;
 }

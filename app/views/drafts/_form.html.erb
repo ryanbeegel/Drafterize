@@ -1,0 +1,20 @@
+<%= form_for Draft.new do |f| %>
+  <div class="form-group">
+    <%= f.label :name, "Draft Name" %>
+    <%= f.text_field :name, placeholder: "Enter Draft Name", class: "form-control" %>
+  </div>
+  <p class="roundss"><b>Choose # of rounds:</b></p>
+  <%= f.select :rounds, options_for_select(["10", "11", "12", "13", "14", "15", "16", "17", "18", "19", "20"]), {}, {class: "form-control"} %>
+ 
+  <p class="minutess"><b>Choose minutes per pick:</b></p>
+  <%= f.select :minutes_per_round, options_for_select(["0.5", "1.0", "1.5", "2.0", "2.5", "3.0", "3.5", "4.0", "4.5", "5.0"]), {}, {class: "form-control"} %>
+
+  <p class="teamnames"><b>Enter Team Names (in order of draft pick):</b></p>
+  
+  <% 4.times do %>
+    <%=  render "team_name_form" %>
+  <% end %>
+  <div class="buttonn">
+    <%= f.submit "Start Draft", class: "btn btn-primary" %>
+  </div>
+<% end %>
