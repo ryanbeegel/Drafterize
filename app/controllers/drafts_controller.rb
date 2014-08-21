@@ -6,6 +6,11 @@ class DraftsController < ApplicationController
   end
 
   def new
+    #if current_user
+      #@draft = Draft.new
+    #else
+      #raise Pundit::NotAuthorizedError, "You must be logged in to create a new list."
+    #end
   end
 
   def create
