@@ -1,7 +1,9 @@
 Drafterize::Application.routes.draw do
 
-  resources :players
-  resources :drafts
+  
+  resources :drafts do 
+    resources :players
+  end
   
   devise_for :users
   root to: 'welcome#index'

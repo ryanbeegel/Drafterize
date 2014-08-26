@@ -1,8 +1,26 @@
 <h1><%= @draft.name %></h1>
+<%= form_for [@draft, Player.new] do |f| %>
+  <%= f.text_field :name %>
+  <%= f.submit "Draft" %>
+<% end %>
 
-<table class="table1">
+<table class="table table-bordered">
   <thead>
+    <th></th>
+    <% @draft.teams.each do |team| %>
+      <th><%= team.name %></th>
+    <% end %>
   </thead>
   <tbody>
+    <% @draft.rounds.times do |round| %>
+      <tr>
+        <td><%= round + 1 %></td> 
+        <% @draft.teams.each do |team| %>
+          <td id="round-<%= round %>-team-<%= team.id %>">
+            <%= render_player_name_for_team_and_round(team, round + 1) %>
+          </td>
+        <% end %>
+      </tr>    
+    <% end %>
   </tbody>
 </table>
